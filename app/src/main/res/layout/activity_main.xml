@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.sebastian_gnich.blubberblas.MainActivity"
+    >
+
+    <de.sebastian_gnich.blubberblas.BlubberView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blubber"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/ic_media_rew"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:id="@+id/tv_count"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/ic_media_ff"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_right"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
